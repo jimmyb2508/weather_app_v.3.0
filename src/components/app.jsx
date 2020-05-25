@@ -11,6 +11,8 @@ class App extends React.Component {
     this.state = {
       selectedDate: this.props.forecasts[0].date,
     };
+
+    this.handleForecastSelect = this.handleForecastSelect.bind(this);
   }
 
   handleForecastSelect(date) {
