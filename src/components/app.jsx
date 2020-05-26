@@ -5,6 +5,8 @@ import ForecastDetails from './forecast-details';
 import SearchForm from './SearchForm';
 import Axios from 'axios';
 
+import '../styles/app.css';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -59,20 +61,25 @@ class App extends React.Component {
 
 
     return (
-  <div className="forecast">
-      <LocationDetails
-        city={this.state.location.city} 
-        country={this.state.location.country} 
-      />
+      <div className="forecast">
+        <h1>WEATHER</h1>
+        <h2>FIVE DAY FORECAST</h2>
+        <LocationDetails
+          city={this.state.location.city} 
+          country={this.state.location.country} 
+        />
 
-      <SearchForm onSearch={this.handleCityRequest} />
+        <div className="search-bar">
+          <SearchForm onSearch={this.handleCityRequest} />
+        </div>
 
-      <ForecastSummaries 
-        forecasts={this.state.forecasts}
-        onForecastSelect={this.handleForecastSelect}
-      />
-      {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
-  </div>
+        <ForecastSummaries 
+          forecasts={this.state.forecasts}
+          onForecastSelect={this.handleForecastSelect}
+        />
+          {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
+      </div>
+
     );
   }
 };

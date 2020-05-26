@@ -1,5 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap');
+
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('../images/background_weather.jpg');
+  /* background-image: url('../images/background_weather.jpg'); */
+  color: #ffffff;
+}
+
+
 .forecast {
   margin-left: 20px;
   margin-right: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  /* display: grid; */
 }
+
+h1 {
+  font-size: 40px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+}
+
+.search-bar {
+  margin: 20px;
+}
+
+.forecast-summary {
+  border: 2px solid white;
+  box-shadow: 4px 4px #888888;
+  font-size: 25px;
+}
+
+/* @media(max-width: 600px){
+
+  .forecast {
+    display: grid;
+  }
+} */
