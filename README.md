@@ -1,36 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Title - Weather App
 
-# React Bootstrap
+Apparently the English are always talking about the weather? What better way to compliment that opening conversation topic than with reference to a Weather App?
 
-React boilerplate project for Manchester Codes' projects.
+The App utilizes an API built by the MCR Codes Development Team and has been built using React and basic CSS styling. This has been designed to work on desktop & mobile. 
+
+Weather App has the following features:
+
+You can search by city.
+
+The app has built in error handling to catch any city names that are returned as a 404 from the API. Server errors 500 are always handled.
+
+Upon entering a valid city name and selecting 'Search', a five day forecast is displayed showing the following details for each of the five days:
+
+1. Day, Date & Month
+2. Temperature in °C
+3. A description e.g. clouds
+4. A weather Icon
+
+Users then have the option of selecting more details for each of the days by pressing the 'More Details' button. These details are displayed at the foot of the page and display the following:
+
+1. Day, Date & Month
+2. Max Temp in °C
+3. Min Temp in °C
+4. Wind Speed in mph
+5. Wind Direction
+6. Humidity in %
+
+## Prerequisites
+
+You can view a completed version of the app here:
+
+https://weather-app-v-3-0.now.sh/
+
+Alternatively you can obtain the tutorial bny becoming a student of Manchester Codes here:
+
+https://www.manchestercodes.com/
 
 ## Getting Started
 
-### Clone down this repository (replace `<your_project_name>`:
+You are free to pull the code and inspect it should you wish.
 
-```bash
-git clone git@github.com:MCRcodes/react-bootstrap.git <your_project_name>
-```
+## Tests
 
-### Install dependencies
+All the JavaScript is tested using Jest. To run the tests yourself you will need to open your terminal and install jest as a developer dependency by typing the following into the command line: `npm install -D jest`.
 
-```bash
-npm install
-```
+Once completed you will ne able to run the test by typing `npm test`.
 
-### Start up the application:
+## Author
 
-```bash
-npm start
-```
+James Barrington
 
-### Visit `localhost:3000` in your browser.
+## Acknowledgements 
 
-You should see a **Hello World** message.
+Manchester Codes (https://github.com/MCRcodes)
 
-### Change the rendered output
 
-You can change what is mounted to the DOM in `src/index.js`.
 
-It might be a good idea to make an `App` component inside `App.jsx` (will likely handle your layout and routing), and to mount this to the DOM.
-# weather_app_v.3.0
+
