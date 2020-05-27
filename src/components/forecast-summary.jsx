@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import WeatherIcon from 'react-icons-weather';
 import moment from 'moment';
 
@@ -14,17 +13,5 @@ const ForecastSummary = props => (
     <div><button className="more-details-butt" onClick={() => props.onSelect(props.date)}>More Details</button></div>
   </div>
 );
-
-ForecastSummary.propTypes = {
-  date: PropTypes.string,
-  temperature: PropTypes.string,
-  description: PropTypes.string,
-  icon: PropTypes.string,
-};
-
-WeatherIcon.propTypes = {
-  name: PropTypes.string,
-}
-
 
 export default ForecastSummary;

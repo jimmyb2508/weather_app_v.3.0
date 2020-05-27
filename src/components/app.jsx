@@ -38,7 +38,7 @@ class App extends React.Component {
         },
         forecasts: response.data.forecasts,
       });
-    });
+    })
   };
 
   handleCityRequest = (e, city) => {
@@ -52,6 +52,24 @@ class App extends React.Component {
         },
         forecasts: response.data.forecasts,
       });
+    }).catch(error => {
+      if(404){
+        this.setState({
+          location: {
+            city: 'City Not Found',
+            country: 'Try Again!'
+          }
+        });
+      } else if (500){
+        this.setState({
+          location: {
+            location: {
+              city: 'Server Error',
+              country: 'Test Connection!'
+            }
+          }
+        })
+      }
     });
   };
 
@@ -78,8 +96,8 @@ class App extends React.Component {
           onForecastSelect={this.handleForecastSelect}
         />
           {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
+        
       </div>
-
     );
   }
 };

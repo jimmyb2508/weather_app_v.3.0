@@ -41,10 +41,3 @@ h2 {
   box-shadow: 4px 4px #888888;
   font-size: 25px;
 }
-
-/* @media(max-width: 600px){
-
-  .forecast {
-    display: grid;
-  }
-} */

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import ForecastSummary from './forecast-summary';
 
 import '../styles/forecast-summaries.css';
@@ -20,12 +19,5 @@ const ForecastSummaries = props => (
     }
   </div>
 );
-
-ForecastSummaries.propTypes = {
-  date: PropTypes.number,
-  temperature: PropTypes.number,
-  description: PropTypes.string,
-  icon: PropTypes.object,
-};
 
 export default ForecastSummaries;
