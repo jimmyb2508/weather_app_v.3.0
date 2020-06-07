@@ -80,7 +80,7 @@ class App extends React.Component {
 
     return (
       <div className="forecast">
-        <h1>WEATHER</h1>
+        <h1>UK WEATHER</h1>
         <h2>FIVE DAY FORECAST</h2>
         <LocationDetails
           city={this.state.location.city} 
